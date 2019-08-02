@@ -13,4 +13,11 @@
   - Garantir a validade da informação;
   - Garantir que informações uma vez criadas nao sejam alteradas;
   - Podemos retirar essa entidade mediadora
-  
+
+### Consenso distribuído
+  Imaginando a seguite situação: "A" transfere 100 para "B" que transfere esses 100 para "C". em seguida "B" (que n tem mais nada) transfere 100 para "D", como garantir esse histórico?
+
+  - Um participante A ao transferir uma informação para B deve notifica os demais (número consuderável) de participantes e estes avaliarem se essa transação é possível.  
+  - Se a rede de participantes aprovam uma transação, então há o Concenso da Rede (assim a rede diria que B nao pode trnasferir para D);
+  - Informações nunca são alteradas ou removidas do histórico, apenas adicionadas;
+  - O histórico de operações é algo estilo "append only". Você só adiciona informações, nunca remove nem altera.
